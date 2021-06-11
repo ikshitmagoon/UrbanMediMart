@@ -8474,19 +8474,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Ikshit Magoon\\.nuget\\packages\\": {}
+    "C:\\Users\\yaman\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Ikshit Magoon\\source\\repos\\UrbanMediMart\\UrbanMediMart\\UrbanMediMart.csproj",
+      "projectUniqueName": "D:\\00 Coforge Training\\Project\\MediMart\\UrbanMediMart.csproj",
       "projectName": "UrbanMediMart",
-      "projectPath": "C:\\Users\\Ikshit Magoon\\source\\repos\\UrbanMediMart\\UrbanMediMart\\UrbanMediMart.csproj",
-      "packagesPath": "C:\\Users\\Ikshit Magoon\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Ikshit Magoon\\source\\repos\\UrbanMediMart\\UrbanMediMart\\obj\\",
+      "projectPath": "D:\\00 Coforge Training\\Project\\MediMart\\UrbanMediMart.csproj",
+      "packagesPath": "C:\\Users\\yaman\\.nuget\\packages\\",
+      "outputPath": "D:\\00 Coforge Training\\Project\\MediMart\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Ikshit Magoon\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\yaman\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -8545,7 +8545,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.204\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.300\\RuntimeIdentifierGraph.json"
       }
     }
   }
