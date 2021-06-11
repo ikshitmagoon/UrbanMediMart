@@ -123,21 +123,23 @@ namespace UrbanMediMart.Models
 
             modelBuilder.Entity<OrderDetail>(entity =>
             {
-                entity.HasNoKey();
-
                 entity.ToTable("Order_detail");
+
+                entity.Property(e => e.OrderDetailId)
+                    .HasColumnName("Order_detail_Id")
+                    .ValueGeneratedNever();
 
                 entity.Property(e => e.ProductId).HasColumnName("Product_Id");
 
                 entity.HasOne(d => d.Order)
-                    .WithMany()
+                    .WithMany(p => p.OrderDetail)
                     .HasForeignKey(d => d.OrderId)
-                    .HasConstraintName("FK__Order_det__Order__5165187F");
+                    .HasConstraintName("FK__Order_det__Order__6477ECF3");
 
                 entity.HasOne(d => d.Product)
-                    .WithMany()
+                    .WithMany(p => p.OrderDetail)
                     .HasForeignKey(d => d.ProductId)
-                    .HasConstraintName("FK__Order_det__Produ__52593CB8");
+                    .HasConstraintName("FK__Order_det__Produ__656C112C");
             });
 
             modelBuilder.Entity<Orders>(entity =>
