@@ -9,6 +9,11 @@ namespace UrbanMediMart.Models
 {
     public partial class Product
     {
+        public Product()
+        {
+            OrderDetail = new HashSet<OrderDetail>();
+        }
+
         public int MedicineId { get; set; }
         public string MedicineName { get; set; }
         public string Company { get; set; }
@@ -18,8 +23,9 @@ namespace UrbanMediMart.Models
         public DateTime ExpDate { get; set; }
         public double Units { get; set; }
         public byte[] Pimage { get; set; }
-        public double? CategoryId { get; set; }
+        public int? CategoryId { get; set; }
 
         public virtual Category Category { get; set; }
+        public virtual ICollection<OrderDetail> OrderDetail { get; set; }
     }
 }

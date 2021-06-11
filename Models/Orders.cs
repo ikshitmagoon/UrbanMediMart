@@ -9,6 +9,11 @@ namespace UrbanMediMart.Models
 {
     public partial class Orders
     {
+        public Orders()
+        {
+            OrderDetail = new HashSet<OrderDetail>();
+        }
+
         public int OrderId { get; set; }
         public int? CustomerId { get; set; }
         public DateTime OrderDate { get; set; }
@@ -20,5 +25,6 @@ namespace UrbanMediMart.Models
         public string OrderStatus { get; set; }
 
         public virtual Customers Customer { get; set; }
+        public virtual ICollection<OrderDetail> OrderDetail { get; set; }
     }
 }
