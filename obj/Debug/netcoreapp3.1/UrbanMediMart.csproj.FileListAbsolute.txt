@@ -6,7 +6,6 @@ C:\Users\Ikshit Magoon\source\repos\UrbanMediMart\UrbanMediMart\bin\Debug\netcor
 C:\Users\Ikshit Magoon\source\repos\UrbanMediMart\UrbanMediMart\bin\Debug\netcoreapp3.1\UrbanMediMart.runtimeconfig.dev.json
 C:\Users\Ikshit Magoon\source\repos\UrbanMediMart\UrbanMediMart\bin\Debug\netcoreapp3.1\UrbanMediMart.dll
 C:\Users\Ikshit Magoon\source\repos\UrbanMediMart\UrbanMediMart\bin\Debug\netcoreapp3.1\UrbanMediMart.pdb
-C:\Users\Ikshit Magoon\source\repos\UrbanMediMart\UrbanMediMart\obj\Debug\netcoreapp3.1\UrbanMediMart.csprojAssemblyReference.cache
 C:\Users\Ikshit Magoon\source\repos\UrbanMediMart\UrbanMediMart\obj\Debug\netcoreapp3.1\UrbanMediMart.AssemblyInfoInputs.cache
 C:\Users\Ikshit Magoon\source\repos\UrbanMediMart\UrbanMediMart\obj\Debug\netcoreapp3.1\UrbanMediMart.AssemblyInfo.cs
 C:\Users\Ikshit Magoon\source\repos\UrbanMediMart\UrbanMediMart\obj\Debug\netcoreapp3.1\UrbanMediMart.csproj.CoreCompileInputs.cache
