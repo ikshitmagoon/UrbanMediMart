@@ -30,7 +30,6 @@ namespace UrbanMediMart.Models
         {
             if (!optionsBuilder.IsConfigured)
             {
-#warning To protect potentially sensitive information in your connection string, you should move it out of source code. See http://go.microsoft.com/fwlink/?LinkId=723263 for guidance on storing connection strings.
 
                 optionsBuilder.UseSqlServer("Server=DESKTOP-LQFLIB6\\IKSHIT;Database=UrbanMediMart;Trusted_Connection=true;");
 
@@ -48,9 +47,8 @@ namespace UrbanMediMart.Models
 
                 entity.HasIndex(e => e.FullName)
                     .HasName("UQ__Admin__19491390174AEE63")
-                    .IsUnique();
 
-             
+                    .IsUnique();
 
                 entity.Property(e => e.Id).ValueGeneratedNever();
 
@@ -146,6 +144,7 @@ namespace UrbanMediMart.Models
 
                     .HasConstraintName("FK__Order_det__Order__6477ECF3");
 
+
                 entity.HasOne(d => d.Product)
                     .WithMany(p => p.OrderDetail)
                     .HasForeignKey(d => d.ProductId)
@@ -159,7 +158,6 @@ namespace UrbanMediMart.Models
                 entity.HasKey(e => e.OrderId)
 
                     .HasName("PK__Orders__465962294DA16B87");
-
 
                 entity.Property(e => e.OrderId)
                     .HasColumnName("order_id")
