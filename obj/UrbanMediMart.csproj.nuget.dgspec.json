@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "D:\\00 Coforge Training\\0000 Project\\Urban Medi Mart\\UrbanMediMart.csproj": {}
   },
   "projects": {
@@ -12,9 +13,30 @@
         "projectPath": "D:\\00 Coforge Training\\0000 Project\\Urban Medi Mart\\UrbanMediMart.csproj",
         "packagesPath": "C:\\Users\\yaman\\.nuget\\packages\\",
         "outputPath": "D:\\00 Coforge Training\\0000 Project\\Urban Medi Mart\\obj\\",
+=======
+    "M:\\Coforge\\Training\\UrbanMediMart\\UrbanMediMart.csproj": {}
+  },
+  "projects": {
+    "M:\\Coforge\\Training\\UrbanMediMart\\UrbanMediMart.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "M:\\Coforge\\Training\\UrbanMediMart\\UrbanMediMart.csproj",
+        "projectName": "UrbanMediMart",
+        "projectPath": "M:\\Coforge\\Training\\UrbanMediMart\\UrbanMediMart.csproj",
+        "packagesPath": "C:\\Users\\gmohi\\.nuget\\packages\\",
+        "outputPath": "M:\\Coforge\\Training\\UrbanMediMart\\obj\\",
+>>>>>>> mohitB
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
+<<<<<<< HEAD
           "C:\\Users\\yaman\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+          "C:\\Users\\gmohi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+>>>>>>> mohitB
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -73,7 +95,11 @@
               "privateAssets": "all"
             }
           },
+<<<<<<< HEAD
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.300\\RuntimeIdentifierGraph.json"
+=======
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
+>>>>>>> mohitB
         }
       }
     }
