@@ -35,8 +35,18 @@ namespace UrbanMediMart
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+<<<<<<< HEAD
+<<<<<<< HEAD
+            services.AddDbContext<UrbanMediMartContext>(options => options.UseSqlServer(Configuration.GetConnectionString("UrbanMediMartDbConstr")));
+
+=======
             services.AddDbContext<UrbanMediMartContext>(options =>
         options.UseSqlServer(Configuration.GetConnectionString("UrbanMediMartDbConstr")));
+>>>>>>> yaman
+=======
+            services.AddDbContext<UrbanMediMartContext>(options =>
+        options.UseSqlServer(Configuration.GetConnectionString("UrbanMediMartDbConstr")));
+>>>>>>> mohitB
             services.AddControllers();
             services.AddDbContext<UrbanMediMartContext>(options =>
         options.UseSqlServer(Configuration.GetConnectionString("UrbanMediMartDbConstr")));

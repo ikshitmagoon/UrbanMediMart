@@ -1,9 +1,15 @@
 {
   "version": 2,
 <<<<<<< HEAD
+<<<<<<< HEAD
   "dgSpecHash": "NX0F0bDScpmheSJ5eqjG9Uemq6qiK9GsE2CaLZtW53uI4TaWaYoSq7BZdmoDyZ7sz3MNcdWewts73xlY71KXyw==",
   "success": true,
   "projectFilePath": "D:\\00 Coforge Training\\Project\\MediMart\\UrbanMediMart.csproj",
+=======
+  "dgSpecHash": "/M+RRf7UZZevPxtw0nvOqNtbqCJoPfgjSrmu3dLEXuusgojtijEAfAZNryD9XZ1ejgw5jrO0qSUwPGxHl+cwag==",
+  "success": true,
+  "projectFilePath": "D:\\00 Coforge Training\\0000 Project\\Urban Medi Mart\\UrbanMediMart.csproj",
+>>>>>>> origin/Ikshit
   "expectedPackageFiles": [
     "C:\\Users\\yaman\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\yaman\\.nuget\\packages\\microsoft.aspnetcore.razor\\2.2.0\\microsoft.aspnetcore.razor.2.2.0.nupkg.sha512",
@@ -328,7 +334,11 @@
     "C:\\Users\\gmohi\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
     "C:\\Users\\gmohi\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
     "C:\\Users\\gmohi\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512"
+<<<<<<< HEAD
 >>>>>>> origin/mohitB
+=======
+>>>>>>> mohitB
+>>>>>>> origin/Ikshit
   ],
   "logs": []
 }
