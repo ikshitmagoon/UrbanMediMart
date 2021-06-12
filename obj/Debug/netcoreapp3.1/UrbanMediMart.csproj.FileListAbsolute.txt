@@ -130,3 +130,4 @@ C:\Users\Ikshit Magoon\source\repos\UrbanMediMart\UrbanMediMart\bin\Debug\netcor
 C:\Users\Ikshit Magoon\source\repos\UrbanMediMart\UrbanMediMart\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Users\Ikshit Magoon\source\repos\UrbanMediMart\UrbanMediMart\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\Ikshit Magoon\source\repos\UrbanMediMart\UrbanMediMart\obj\Debug\netcoreapp3.1\UrbanMediMart.csproj.CopyComplete
+C:\Users\Ikshit Magoon\source\repos\UrbanMediMart\UrbanMediMart\obj\Debug\netcoreapp3.1\UrbanMediMart.csprojAssemblyReference.cache
