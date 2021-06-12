@@ -31,7 +31,11 @@ namespace UrbanMediMart.Model
             if (!optionsBuilder.IsConfigured)
             {
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. See http://go.microsoft.com/fwlink/?LinkId=723263 for guidance on storing connection strings.
+<<<<<<< HEAD:Model/UrbanMediMartContext.cs
                 optionsBuilder.UseSqlServer("Server=DESKTOP-UENS42J\\SQLEXPRESS;database=UrbanMediMart;trusted_connection=true");
+=======
+                optionsBuilder.UseSqlServer("Server=LAPTOP-BQ2NAUDM\\SQLEXPRESS01;Database=UrbanMediMart;Trusted_Connection=true;");
+>>>>>>> itika:Models/UrbanMediMartContext.cs
             }
         }
 
@@ -40,11 +44,19 @@ namespace UrbanMediMart.Model
             modelBuilder.Entity<Admin>(entity =>
             {
                 entity.HasIndex(e => e.Email)
+<<<<<<< HEAD:Model/UrbanMediMartContext.cs
                     .HasName("UQ__Admin__AB6E6164FB9BB406")
                     .IsUnique();
 
                 entity.HasIndex(e => e.FullName)
                     .HasName("UQ__Admin__19491390EA1C6CD3")
+=======
+                    .HasName("UQ__Admin__AB6E6164F4EBA9DB")
+                    .IsUnique();
+
+                entity.HasIndex(e => e.FullName)
+                    .HasName("UQ__Admin__19491390174AEE63")
+>>>>>>> itika:Models/UrbanMediMartContext.cs
                     .IsUnique();
 
                 entity.Property(e => e.Id).ValueGeneratedNever();
@@ -66,6 +78,8 @@ namespace UrbanMediMart.Model
 
             modelBuilder.Entity<Category>(entity =>
             {
+                entity.Property(e => e.CategoryId).ValueGeneratedNever();
+
                 entity.Property(e => e.CategoryName)
                     .IsRequired()
                     .HasMaxLength(100);
@@ -74,10 +88,17 @@ namespace UrbanMediMart.Model
             modelBuilder.Entity<Customers>(entity =>
             {
                 entity.HasKey(e => e.CustomerId)
+<<<<<<< HEAD:Model/UrbanMediMartContext.cs
                     .HasName("PK__Customer__A4AE64B8658DBD33");
 
                 entity.HasIndex(e => e.Email)
                     .HasName("UQ__Customer__A9D1053474718768")
+=======
+                    .HasName("PK__Customer__A4AE64B813CC1052");
+
+                entity.HasIndex(e => e.Email)
+                    .HasName("UQ__Customer__A9D10534BBB184D6")
+>>>>>>> itika:Models/UrbanMediMartContext.cs
                     .IsUnique();
 
                 entity.Property(e => e.CustomerId)
@@ -134,18 +155,30 @@ namespace UrbanMediMart.Model
                 entity.HasOne(d => d.Order)
                     .WithMany(p => p.OrderDetail)
                     .HasForeignKey(d => d.OrderId)
+<<<<<<< HEAD:Model/UrbanMediMartContext.cs
                     .HasConstraintName("FK__Order_det__Order__4CA06362");
+=======
+                    .HasConstraintName("FK__Order_det__Order__5CD6CB2B");
+>>>>>>> itika:Models/UrbanMediMartContext.cs
 
                 entity.HasOne(d => d.Product)
                     .WithMany(p => p.OrderDetail)
                     .HasForeignKey(d => d.ProductId)
+<<<<<<< HEAD:Model/UrbanMediMartContext.cs
                     .HasConstraintName("FK__Order_det__Produ__4D94879B");
+=======
+                    .HasConstraintName("FK__Order_det__Produ__5DCAEF64");
+>>>>>>> itika:Models/UrbanMediMartContext.cs
             });
 
             modelBuilder.Entity<Orders>(entity =>
             {
                 entity.HasKey(e => e.OrderId)
+<<<<<<< HEAD:Model/UrbanMediMartContext.cs
                     .HasName("PK__Orders__46596229F249E21E");
+=======
+                    .HasName("PK__Orders__465962294DA16B87");
+>>>>>>> itika:Models/UrbanMediMartContext.cs
 
                 entity.Property(e => e.OrderId)
                     .HasColumnName("order_id")
@@ -176,13 +209,21 @@ namespace UrbanMediMart.Model
                 entity.HasOne(d => d.Customer)
                     .WithMany(p => p.Orders)
                     .HasForeignKey(d => d.CustomerId)
+<<<<<<< HEAD:Model/UrbanMediMartContext.cs
                     .HasConstraintName("FK__Orders__Customer__45F365D3");
+=======
+                    .HasConstraintName("FK__Orders__Customer__3D5E1FD2");
+>>>>>>> itika:Models/UrbanMediMartContext.cs
             });
 
             modelBuilder.Entity<Product>(entity =>
             {
                 entity.HasKey(e => e.MedicineId)
+<<<<<<< HEAD:Model/UrbanMediMartContext.cs
                     .HasName("PK__Product__4F2128F0C432C82A");
+=======
+                    .HasName("PK__Product__4F2128F04A5010DD");
+>>>>>>> itika:Models/UrbanMediMartContext.cs
 
                 entity.Property(e => e.MedicineId)
                     .HasColumnName("MedicineID")
@@ -207,7 +248,11 @@ namespace UrbanMediMart.Model
                 entity.HasOne(d => d.Category)
                     .WithMany(p => p.Product)
                     .HasForeignKey(d => d.CategoryId)
+<<<<<<< HEAD:Model/UrbanMediMartContext.cs
                     .HasConstraintName("FK__Product__Categor__4316F928");
+=======
+                    .HasConstraintName("FK__Product__Categor__412EB0B6");
+>>>>>>> itika:Models/UrbanMediMartContext.cs
             });
 
             OnModelCreatingPartial(modelBuilder);

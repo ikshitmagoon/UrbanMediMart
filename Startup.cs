@@ -11,7 +11,11 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+<<<<<<< HEAD
 using UrbanMediMart.Model;
+=======
+using UrbanMediMart.Models;
+>>>>>>> itika
 
 namespace UrbanMediMart
 {
@@ -30,6 +34,8 @@ namespace UrbanMediMart
             services.AddDbContext<UrbanMediMartContext>(options =>
         options.UseSqlServer(Configuration.GetConnectionString("UrbanMediMartDbConstr")));
             services.AddControllers();
+            services.AddDbContext<UrbanMediMartContext>(options =>
+        options.UseSqlServer(Configuration.GetConnectionString("UrbanMediMartDbConstr")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
