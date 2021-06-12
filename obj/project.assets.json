@@ -8468,46 +8468,26 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
+      "Microsoft.EntityFrameworkCore.Design >= 3.1.15",
       "Microsoft.EntityFrameworkCore.SqlServer >= 3.1.15",
       "Microsoft.EntityFrameworkCore.Tools >= 3.1.15",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 3.1.5"
     ]
   },
   "packageFolders": {
-<<<<<<< HEAD
-    "C:\\Users\\yaman\\.nuget\\packages\\": {}
-=======
-    "C:\\Users\\gmohi\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
->>>>>>> mohitB
+    "C:\\Users\\Ikshit Magoon\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< HEAD
-      "projectUniqueName": "D:\\00 Coforge Training\\0000 Project\\Urban Medi Mart\\UrbanMediMart.csproj",
+      "projectUniqueName": "C:\\Users\\Ikshit Magoon\\source\\repos\\UrbanMediMart\\UrbanMediMart\\UrbanMediMart.csproj",
       "projectName": "UrbanMediMart",
-      "projectPath": "D:\\00 Coforge Training\\0000 Project\\Urban Medi Mart\\UrbanMediMart.csproj",
-      "packagesPath": "C:\\Users\\yaman\\.nuget\\packages\\",
-      "outputPath": "D:\\00 Coforge Training\\0000 Project\\Urban Medi Mart\\obj\\",
-=======
-      "projectUniqueName": "M:\\Coforge\\Training\\UrbanMediMart\\UrbanMediMart.csproj",
-      "projectName": "UrbanMediMart",
-      "projectPath": "M:\\Coforge\\Training\\UrbanMediMart\\UrbanMediMart.csproj",
-      "packagesPath": "C:\\Users\\gmohi\\.nuget\\packages\\",
-      "outputPath": "M:\\Coforge\\Training\\UrbanMediMart\\obj\\",
->>>>>>> mohitB
+      "projectPath": "C:\\Users\\Ikshit Magoon\\source\\repos\\UrbanMediMart\\UrbanMediMart\\UrbanMediMart.csproj",
+      "packagesPath": "C:\\Users\\Ikshit Magoon\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Ikshit Magoon\\source\\repos\\UrbanMediMart\\UrbanMediMart\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-<<<<<<< HEAD
-        "C:\\Users\\yaman\\AppData\\Roaming\\NuGet\\NuGet.Config",
-=======
-        "C:\\Users\\gmohi\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
->>>>>>> mohitB
+        "C:\\Users\\Ikshit Magoon\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -8533,6 +8513,12 @@
       "netcoreapp3.1": {
         "targetAlias": "netcoreapp3.1",
         "dependencies": {
+          "Microsoft.EntityFrameworkCore.Design": {
+            "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+            "suppressParent": "All",
+            "target": "Package",
+            "version": "[3.1.15, )"
+          },
           "Microsoft.EntityFrameworkCore.SqlServer": {
             "target": "Package",
             "version": "[3.1.15, )"
@@ -8566,11 +8552,7 @@
             "privateAssets": "all"
           }
         },
-<<<<<<< HEAD
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.300\\RuntimeIdentifierGraph.json"
-=======
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
->>>>>>> mohitB
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.204\\RuntimeIdentifierGraph.json"
       }
     }
   }
