@@ -6,6 +6,7 @@
 
   <ItemGroup>
 <<<<<<< HEAD
+<<<<<<< HEAD
     <Compile Remove="Models\**" />
     <Content Remove="Models\**" />
     <EmbeddedResource Remove="Models\**" />
@@ -15,6 +16,8 @@
   <ItemGroup>
 =======
 >>>>>>> itika
+=======
+>>>>>>> origin/mohitB
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.15" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.15">
       <PrivateAssets>all</PrivateAssets>

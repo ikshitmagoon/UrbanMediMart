@@ -12,10 +12,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 <<<<<<< HEAD
+<<<<<<< HEAD
 using UrbanMediMart.Model;
 =======
 using UrbanMediMart.Models;
 >>>>>>> itika
+=======
+using UrbanMediMart.Models;
+>>>>>>> origin/mohitB
 
 namespace UrbanMediMart
 {
