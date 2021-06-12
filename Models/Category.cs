@@ -14,7 +14,7 @@ namespace UrbanMediMart.Models
             Product = new HashSet<Product>();
         }
 
-        public double CategoryId { get; set; }
+        public int CategoryId { get; set; }
         public string CategoryName { get; set; }
 
         public virtual ICollection<Product> Product { get; set; }

@@ -23,7 +23,7 @@ namespace UrbanMediMart.Models
         public DateTime ExpDate { get; set; }
         public double Units { get; set; }
         public byte[] Pimage { get; set; }
-        public double? CategoryId { get; set; }
+        public int? CategoryId { get; set; }
 
         public virtual Category Category { get; set; }
         public virtual ICollection<OrderDetail> OrderDetail { get; set; }

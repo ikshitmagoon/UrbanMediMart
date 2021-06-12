@@ -31,7 +31,7 @@ namespace UrbanMediMart.Models
             if (!optionsBuilder.IsConfigured)
             {
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. See http://go.microsoft.com/fwlink/?LinkId=723263 for guidance on storing connection strings.
-                optionsBuilder.UseSqlServer("server=DESKTOP-LQFLIB6\\IKSHIT;database=UrbanMediMart;Trusted_Connection=true");
+                optionsBuilder.UseSqlServer("Server=DESKTOP-LQFLIB6\\IKSHIT;Database=UrbanMediMart;Trusted_Connection=true;");
             }
         }
 
@@ -40,11 +40,11 @@ namespace UrbanMediMart.Models
             modelBuilder.Entity<Admin>(entity =>
             {
                 entity.HasIndex(e => e.Email)
-                    .HasName("UQ__Admin__AB6E61647C8EADC9")
+                    .HasName("UQ__Admin__AB6E6164F4EBA9DB")
                     .IsUnique();
 
                 entity.HasIndex(e => e.FullName)
-                    .HasName("UQ__Admin__1949139036DD7C0A")
+                    .HasName("UQ__Admin__19491390174AEE63")
                     .IsUnique();
 
                 entity.Property(e => e.Id).ValueGeneratedNever();
@@ -66,6 +66,8 @@ namespace UrbanMediMart.Models
 
             modelBuilder.Entity<Category>(entity =>
             {
+                entity.Property(e => e.CategoryId).ValueGeneratedNever();
+
                 entity.Property(e => e.CategoryName)
                     .IsRequired()
                     .HasMaxLength(100);
@@ -74,10 +76,10 @@ namespace UrbanMediMart.Models
             modelBuilder.Entity<Customers>(entity =>
             {
                 entity.HasKey(e => e.CustomerId)
-                    .HasName("PK__Customer__A4AE64B8DD46AD47");
+                    .HasName("PK__Customer__A4AE64B813CC1052");
 
                 entity.HasIndex(e => e.Email)
-                    .HasName("UQ__Customer__A9D10534593EF984")
+                    .HasName("UQ__Customer__A9D10534BBB184D6")
                     .IsUnique();
 
                 entity.Property(e => e.CustomerId)
@@ -134,18 +136,26 @@ namespace UrbanMediMart.Models
                 entity.HasOne(d => d.Order)
                     .WithMany(p => p.OrderDetail)
                     .HasForeignKey(d => d.OrderId)
+<<<<<<< HEAD
                     .HasConstraintName("FK__Order_det__Order__6477ECF3");
+=======
+                    .HasConstraintName("FK__Order_det__Order__5CD6CB2B");
+>>>>>>> itika
 
                 entity.HasOne(d => d.Product)
                     .WithMany(p => p.OrderDetail)
                     .HasForeignKey(d => d.ProductId)
+<<<<<<< HEAD
                     .HasConstraintName("FK__Order_det__Produ__656C112C");
+=======
+                    .HasConstraintName("FK__Order_det__Produ__5DCAEF64");
+>>>>>>> itika
             });
 
             modelBuilder.Entity<Orders>(entity =>
             {
                 entity.HasKey(e => e.OrderId)
-                    .HasName("PK__Orders__4659622969D5D133");
+                    .HasName("PK__Orders__465962294DA16B87");
 
                 entity.Property(e => e.OrderId)
                     .HasColumnName("order_id")
@@ -176,13 +186,13 @@ namespace UrbanMediMart.Models
                 entity.HasOne(d => d.Customer)
                     .WithMany(p => p.Orders)
                     .HasForeignKey(d => d.CustomerId)
-                    .HasConstraintName("FK__Orders__Customer__4BAC3F29");
+                    .HasConstraintName("FK__Orders__Customer__3D5E1FD2");
             });
 
             modelBuilder.Entity<Product>(entity =>
             {
                 entity.HasKey(e => e.MedicineId)
-                    .HasName("PK__Product__4F2128F01DF693A0");
+                    .HasName("PK__Product__4F2128F04A5010DD");
 
                 entity.Property(e => e.MedicineId)
                     .HasColumnName("MedicineID")
@@ -207,7 +217,7 @@ namespace UrbanMediMart.Models
                 entity.HasOne(d => d.Category)
                     .WithMany(p => p.Product)
                     .HasForeignKey(d => d.CategoryId)
-                    .HasConstraintName("FK__Product__Categor__4F7CD00D");
+                    .HasConstraintName("FK__Product__Categor__412EB0B6");
             });
 
             OnModelCreatingPartial(modelBuilder);

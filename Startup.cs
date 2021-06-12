@@ -30,6 +30,8 @@ namespace UrbanMediMart
             services.AddDbContext<UrbanMediMartContext>(options => options.UseSqlServer(Configuration.GetConnectionString("UrbanMediMartDbConstr")));
 
             services.AddControllers();
+            services.AddDbContext<UrbanMediMartContext>(options =>
+        options.UseSqlServer(Configuration.GetConnectionString("UrbanMediMartDbConstr")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
