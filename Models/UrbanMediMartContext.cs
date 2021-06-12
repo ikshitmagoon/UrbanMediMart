@@ -31,7 +31,11 @@ namespace UrbanMediMart.Models
             if (!optionsBuilder.IsConfigured)
             {
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. See http://go.microsoft.com/fwlink/?LinkId=723263 for guidance on storing connection strings.
+<<<<<<< HEAD
                 optionsBuilder.UseSqlServer("Server=DESKTOP-LQFLIB6\\IKSHIT;Database=UrbanMediMart;Trusted_Connection=true;");
+=======
+                optionsBuilder.UseSqlServer("Server=DESKTOP-UENS42J\\SQLEXPRESS;database=UrbanMediMart;trusted_connection=true");
+>>>>>>> yaman
             }
         }
 
@@ -40,11 +44,19 @@ namespace UrbanMediMart.Models
             modelBuilder.Entity<Admin>(entity =>
             {
                 entity.HasIndex(e => e.Email)
+<<<<<<< HEAD
                     .HasName("UQ__Admin__AB6E6164F4EBA9DB")
                     .IsUnique();
 
                 entity.HasIndex(e => e.FullName)
                     .HasName("UQ__Admin__19491390174AEE63")
+=======
+                    .HasName("UQ__Admin__AB6E61649F08D924")
+                    .IsUnique();
+
+                entity.HasIndex(e => e.FullName)
+                    .HasName("UQ__Admin__19491390C8A17CE4")
+>>>>>>> yaman
                     .IsUnique();
 
                 entity.Property(e => e.Id).ValueGeneratedNever();
@@ -76,10 +88,17 @@ namespace UrbanMediMart.Models
             modelBuilder.Entity<Customers>(entity =>
             {
                 entity.HasKey(e => e.CustomerId)
+<<<<<<< HEAD
                     .HasName("PK__Customer__A4AE64B813CC1052");
 
                 entity.HasIndex(e => e.Email)
                     .HasName("UQ__Customer__A9D10534BBB184D6")
+=======
+                    .HasName("PK__Customer__A4AE64B8EF6580D1");
+
+                entity.HasIndex(e => e.Email)
+                    .HasName("UQ__Customer__A9D105343AE287BB")
+>>>>>>> yaman
                     .IsUnique();
 
                 entity.Property(e => e.CustomerId)
@@ -137,25 +156,37 @@ namespace UrbanMediMart.Models
                     .WithMany(p => p.OrderDetail)
                     .HasForeignKey(d => d.OrderId)
 <<<<<<< HEAD
+<<<<<<< HEAD
                     .HasConstraintName("FK__Order_det__Order__6477ECF3");
 =======
                     .HasConstraintName("FK__Order_det__Order__5CD6CB2B");
 >>>>>>> itika
+=======
+                    .HasConstraintName("FK__Order_det__Order__48CFD27E");
+>>>>>>> yaman
 
                 entity.HasOne(d => d.Product)
                     .WithMany(p => p.OrderDetail)
                     .HasForeignKey(d => d.ProductId)
 <<<<<<< HEAD
+<<<<<<< HEAD
                     .HasConstraintName("FK__Order_det__Produ__656C112C");
 =======
                     .HasConstraintName("FK__Order_det__Produ__5DCAEF64");
 >>>>>>> itika
+=======
+                    .HasConstraintName("FK__Order_det__Produ__49C3F6B7");
+>>>>>>> yaman
             });
 
             modelBuilder.Entity<Orders>(entity =>
             {
                 entity.HasKey(e => e.OrderId)
+<<<<<<< HEAD
                     .HasName("PK__Orders__465962294DA16B87");
+=======
+                    .HasName("PK__Orders__46596229F65BC608");
+>>>>>>> yaman
 
                 entity.Property(e => e.OrderId)
                     .HasColumnName("order_id")
@@ -186,13 +217,21 @@ namespace UrbanMediMart.Models
                 entity.HasOne(d => d.Customer)
                     .WithMany(p => p.Orders)
                     .HasForeignKey(d => d.CustomerId)
+<<<<<<< HEAD
                     .HasConstraintName("FK__Orders__Customer__3D5E1FD2");
+=======
+                    .HasConstraintName("FK__Orders__Customer__44FF419A");
+>>>>>>> yaman
             });
 
             modelBuilder.Entity<Product>(entity =>
             {
                 entity.HasKey(e => e.MedicineId)
+<<<<<<< HEAD
                     .HasName("PK__Product__4F2128F04A5010DD");
+=======
+                    .HasName("PK__Product__4F2128F0B2FE0103");
+>>>>>>> yaman
 
                 entity.Property(e => e.MedicineId)
                     .HasColumnName("MedicineID")
@@ -217,7 +256,11 @@ namespace UrbanMediMart.Models
                 entity.HasOne(d => d.Category)
                     .WithMany(p => p.Product)
                     .HasForeignKey(d => d.CategoryId)
+<<<<<<< HEAD
                     .HasConstraintName("FK__Product__Categor__412EB0B6");
+=======
+                    .HasConstraintName("FK__Product__Categor__4222D4EF");
+>>>>>>> yaman
             });
 
             OnModelCreatingPartial(modelBuilder);
